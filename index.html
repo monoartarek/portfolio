@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <!-- For font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link up -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- navbar -->
+     <nav>
+        <div class="left">
+            <a href="#home">
+                <img src="./images/logo.png" alt="logo">
+                <span>My Portfolio</span>
+            </a>
+        </div>
+        <div class="right">
+            <a href="#skills">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#Projects">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#Contact">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+            
+        </div>
+     </nav>
+
+<!-- --------main part below the navbar---------- -->
+     <main>
+        <!-- main part er vetore sobar upore hero section thake  -->
+        <section class="hero">
+            <!-- text part -->
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="name">Tarek Monoar</span></h1>
+                <h3>Welcome to my portfolio</h3>
+                <p>Hi, I'm Md Tarek Monoar, a 3rd-year Computer Science and Engineering student at Faridpur Engineering College.
+
+                I’m passionate about building clean, functional, and user-friendly web applications. With hands-on experience in front-end and back-end technologies,I’ve developed projects using HTML, CSS, JavaScript, Python, Django, React, and MySQL.
+
+                From designing responsive user interfaces to developing full-stack applications, I enjoy solving real-world problems through code. I’m currently focused on enhancing my skills in modern web development and exploring opportunities to work on impactful software projects.
+
+                Let’s build something great together!</p>
+
+                <div class="links">
+                    <a href="https://github.com/monoartarek">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/md-tarek-monoar-6263b2329/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>Linkedin</span>
+                    </a>
+                    <a href="https://www.facebook.com/tarekmonoar.tarek.35/">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.instagram.com/moonooar/">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- image part -->
+             <div class="headshot">
+                <img src="./images/tarek-hero.jpg" alt="headshot">
+             </div>
+
+        </section>
+        <!-- skills section -->
+        <section class="skills">
+            <h1>Skills</h1>
+            <div class="text">
+                I’ve developed projects using HTML, CSS, JavaScript, Python, Django, React, and MySQL.
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="./images/html-logo.png" alt="">
+                    <span class="name">HTML</span>
+                </div>
+                <div class="cell">
+                    <img src="./images/css-logo.png" alt="">
+                    <span class="name">CSS</span>
+                </div>
+                <div class="cell">
+                    <img src="./images/javascript-logo.png" alt="">
+                    <span class="name">JavaScript</span>
+                </div>
+                <div class="cell">
+                    <img src="./images/react-logo.png" alt="">
+                    <span class="name">React</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- project section -->
+        <section class="projects">
+                <div class="projectBoard">
+                    <h1>Projects</h1>
+                    <p>Here are some of my recent projects that showcase my skills and experience.</p>
+                    <div class="projectShow">
+                        <div class="box">
+                            <h3>Project 1</h3>
+                            <p>You can generate QR codes in Python using the qrcode library.
+                            It allows you to encode URLs, text, or other data.</p>
+                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/QR_Code_Generator.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
+                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
+                            
+                        </div>
+                        <div class="box">
+                            <h3>Project 2</h3>
+                            <p>Currency Converter CLI App using python and it can convert real time currency.</p>
+                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/Currency_Converter.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
+                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
+                        </div>
+                        <div class="box">
+                            <h3>Project 3</h3>
+                            <p>Command Line Interface (CLI) project
+                            using Python for a Contact Book Management System.</p>
+                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/Course_project.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
+                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <!-- contact section -->
+        <section class="contact">
+            <h2>Contact</h2>
+            <div class="group">
+                <div class="text">
+                    I'm always open to collaboration, internship opportunities, or freelance work. Whether you're looking for someone to help build a project, contribute to a team, or explore innovative ideas — I’d love to hear from you.<br>
+
+                    Feel free to reach out if you'd like to:<br>
+
+                    Discuss a software or web development project<br>
+
+                    Share feedback on my work<br>
+
+                    Ask a question or start a technical conversation<br>
+
+                    Offer learning, research, or internship opportunities<br>
+
+                    You can contact me directly via email, or connect with me on GitHub or LinkedIn. I'm enthusiastic about growing my skills, meeting new people in tech, and working on meaningful projects.<br>
+
+                    Let’s connect and build something great together!
+                </div>
+
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <label for="message">Message</label>
+                    <textarea name="message" cols="30" rows="10" id="message" placeholder="Your message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <p>&copy; 2025 all right resurved.</p>
+        </footer>
+     </main>
+
+</body>
+</html>

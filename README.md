@@ -4,6 +4,8 @@ This is a responsive and clean personal portfolio website built using **HTML** a
 It showcases an introduction, skills, project highlights, and a contact form.
 
 ---
+![My Profile](images/tarek-hero.jpg)
+
 
 ## 📌 Features
 

@@ -27,3 +27,11 @@ It showcases an introduction, skills, project highlights, and a contact form.
 
 ## 🖥 How to Run
 Link: https://monoartarek.github.io/portfolio/
+
+👤 Author
+Md Tarek Monoar
+🎓 CSE Student, Faridpur Engineering College
+
+🔗 GitHub: monoartarek
+🔗 LinkedIn : Md Tarek Monoar
+📧 (tarekmonoartarek@gmail.com)

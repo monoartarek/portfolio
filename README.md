@@ -26,8 +26,4 @@ It showcases an introduction, skills, project highlights, and a contact form.
 ---
 
 ## 🖥 How to Run
-
-1. Download or clone the repository:
-
-```bash
-git clone https://github.com/your-username/your-portfolio.git
+Link: https://monoartarek.github.io/portfolio/

@@ -1,186 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <!-- For font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- icon -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- link up -->
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarek Monoar | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- navbar -->
-     <nav>
-        <div class="left">
-            <a href="#home">
-                <img src="./images/logo.png" alt="logo">
-                <span>My Portfolio</span>
-            </a>
+
+  <!-- Floating particles canvas -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <div class="logo-cube">
+        <span>TM</span>
+      </div>
+      <span class="logo-text">Tarek Monoar</span>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="nav-links">
+      <a href="#hero" class="nav-link"><i class="fa-solid fa-house"></i><span>Home</span></a>
+      <a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i><span>Skills</span></a>
+      <a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i><span>Projects</span></a>
+      <a href="#contact" class="nav-link"><i class="fa-solid fa-address-book"></i><span>Contact</span></a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-scene">
+        <div class="floating-card hero-card">
+          <div class="card-inner">
+            <div class="hero-content">
+              <div class="tag">👨‍💻 CSE Student · FEC</div>
+              <h1>Hi, I'm <br><span class="gradient-name">Tarek Monoar</span></h1>
+              <p class="hero-desc">3rd-year Computer Science and Engineering student passionate about building clean, functional, and user-friendly web applications. From responsive UIs to full-stack solutions — I solve real-world problems through code.</p>
+              <div class="hero-links">
+                <a href="https://github.com/monoartarek" class="social-btn github" target="_blank">
+                  <i class="fa-brands fa-github"></i><span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/md-tarek-monoar-6263b2329/" class="social-btn linkedin" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i><span>LinkedIn</span>
+                </a>
+                <a href="https://www.facebook.com/tarekmonoar.tarek.35/" class="social-btn facebook" target="_blank">
+                  <i class="fa-brands fa-facebook"></i><span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/moonooar/" class="social-btn instagram" target="_blank">
+                  <i class="fa-brands fa-instagram"></i><span>Instagram</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="right">
-            <a href="#skills">
-                <i class="fa-solid fa-code"></i>
-                <span>Skills</span>
-            </a>
-            <a href="#Projects">
-                <i class="fa-solid fa-diagram-project"></i>
-                <span>Projects</span>
-            </a>
-            <a href="#Contact">
-                <i class="fa-solid fa-address-book"></i>
-                <span>Contact</span>
-            </a>
-            
+
+        <div class="hero-avatar-wrap">
+          <div class="avatar-ring ring-1"></div>
+          <div class="avatar-ring ring-2"></div>
+          <div class="avatar-ring ring-3"></div>
+          <div class="avatar-orb">
+            <img src="./images/tarek-hero.jpg" alt="Tarek Monoar" onerror="this.style.display='none';this.parentElement.querySelector('.avatar-fallback').style.display='flex'">
+            <div class="avatar-fallback">TM</div>
+          </div>
+          <div class="orbit-badge badge-1"><i class="fa-brands fa-python"></i></div>
+          <div class="orbit-badge badge-2"><i class="fa-brands fa-react"></i></div>
+          <div class="orbit-badge badge-3"><i class="fa-solid fa-database"></i></div>
+          <div class="orbit-badge badge-4"><i class="fa-brands fa-js"></i></div>
         </div>
-     </nav>
+      </div>
 
-<!-- --------main part below the navbar---------- -->
-     <main>
-        <!-- main part er vetore sobar upore hero section thake  -->
-        <section class="hero">
-            <!-- text part -->
-            <div class="hero-text">
-                <h1>Hi, I'm <span class="name">Tarek Monoar</span></h1>
-                <h3>Welcome to my portfolio</h3>
-                <p>Hi, I'm Md Tarek Monoar, a 3rd-year Computer Science and Engineering student at Faridpur Engineering College.
+      <div class="scroll-hint">
+        <div class="scroll-dot"></div>
+        <span>scroll down</span>
+      </div>
+    </section>
 
-                I’m passionate about building clean, functional, and user-friendly web applications. With hands-on experience in front-end and back-end technologies,I’ve developed projects using HTML, CSS, JavaScript, Python, Django, React, and MySQL.
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <div class="section-header">
+        <span class="section-label">What I Know</span>
+        <h2>My <span class="accent">Skills</span></h2>
+        <p>Technologies I've worked with to build real-world projects</p>
+      </div>
 
-                From designing responsive user interfaces to developing full-stack applications, I enjoy solving real-world problems through code. I’m currently focused on enhancing my skills in modern web development and exploring opportunities to work on impactful software projects.
-
-                Let’s build something great together!</p>
-
-                <div class="links">
-                    <a href="https://github.com/monoartarek">
-                        <i class="fa-brands fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/md-tarek-monoar-6263b2329/">
-                        <i class="fa-brands fa-linkedin"></i>
-                        <span>Linkedin</span>
-                    </a>
-                    <a href="https://www.facebook.com/tarekmonoar.tarek.35/">
-                        <i class="fa-brands fa-facebook"></i>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://www.instagram.com/moonooar/">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span>Instagram</span>
-                    </a>
-                </div>
+      <div class="skills-grid">
+        <div class="skill-card" style="--i:0">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap html-icon">
+                <img src="./images/html-logo.png" alt="HTML" onerror="this.outerHTML='<i class=\'fa-brands fa-html5\'></i>'">
+              </div>
+              <span>HTML5</span>
             </div>
-
-            <!-- image part -->
-             <div class="headshot">
-                <img src="./images/tarek-hero.jpg" alt="headshot">
-             </div>
-
-        </section>
-        <!-- skills section -->
-        <section class="skills">
-            <h1>Skills</h1>
-            <div class="text">
-                I’ve developed projects using HTML, CSS, JavaScript, Python, Django, React, and MySQL.
+            <div class="skill-back">
+              <p>Semantic markup, accessibility, SEO-friendly structure</p>
             </div>
-            <div class="cells">
-                <div class="cell">
-                    <img src="./images/html-logo.png" alt="">
-                    <span class="name">HTML</span>
-                </div>
-                <div class="cell">
-                    <img src="./images/css-logo.png" alt="">
-                    <span class="name">CSS</span>
-                </div>
-                <div class="cell">
-                    <img src="./images/javascript-logo.png" alt="">
-                    <span class="name">JavaScript</span>
-                </div>
-                <div class="cell">
-                    <img src="./images/react-logo.png" alt="">
-                    <span class="name">React</span>
-                </div>
+          </div>
+        </div>
+
+        <div class="skill-card" style="--i:1">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap css-icon">
+                <img src="./images/css-logo.png" alt="CSS" onerror="this.outerHTML='<i class=\'fa-brands fa-css3-alt\'></i>'">
+              </div>
+              <span>CSS3</span>
             </div>
-        </section>
-
-        <!-- project section -->
-        <section class="projects">
-                <div class="projectBoard">
-                    <h1>Projects</h1>
-                    <p>Here are some of my recent projects that showcase my skills and experience.</p>
-                    <div class="projectShow">
-                        <div class="box">
-                            <h3>Project 1</h3>
-                            <p>You can generate QR codes in Python using the qrcode library.
-                            It allows you to encode URLs, text, or other data.</p>
-                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/QR_Code_Generator.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
-                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
-                            
-                        </div>
-                        <div class="box">
-                            <h3>Project 2</h3>
-                            <p>Currency Converter CLI App using python and it can convert real time currency.</p>
-                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/Currency_Converter.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
-                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
-                        </div>
-                        <div class="box">
-                            <h3>Project 3</h3>
-                            <p>Command Line Interface (CLI) project
-                            using Python for a Contact Book Management System.</p>
-                            <button class="btn" onclick="window.location.href='https://github.com/monoartarek/Course_project.git'"><i class="fa-brands fa-github"></i> &nbsp;Code</button>
-                            <button class="btn"><i class="fa-solid fa-link"></i> &nbsp;Demo</button>
-                        </div>
-                    </div>
-
-                </div>
-        </section>
-        <!-- contact section -->
-        <section class="contact">
-            <h2>Contact</h2>
-            <div class="group">
-                <div class="text">
-                    I'm always open to collaboration, internship opportunities, or freelance work. Whether you're looking for someone to help build a project, contribute to a team, or explore innovative ideas — I’d love to hear from you.<br>
-
-                    Feel free to reach out if you'd like to:<br>
-
-                    Discuss a software or web development project<br>
-
-                    Share feedback on my work<br>
-
-                    Ask a question or start a technical conversation<br>
-
-                    Offer learning, research, or internship opportunities<br>
-
-                    You can contact me directly via email, or connect with me on GitHub or LinkedIn. I'm enthusiastic about growing my skills, meeting new people in tech, and working on meaningful projects.<br>
-
-                    Let’s connect and build something great together!
-                </div>
-
-                <form>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <label for="message">Message</label>
-                    <textarea name="message" cols="30" rows="10" id="message" placeholder="Your message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            <div class="skill-back">
+              <p>Responsive design, animations, Flexbox & Grid layouts</p>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <!-- footer -->
-        <footer>
-            <p>&copy; 2025 all right resurved.</p>
-        </footer>
-     </main>
+        <div class="skill-card" style="--i:2">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap js-icon">
+                <img src="./images/javascript-logo.png" alt="JavaScript" onerror="this.outerHTML='<i class=\'fa-brands fa-js\'></i>'">
+              </div>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-back">
+              <p>ES6+, DOM manipulation, async programming, APIs</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="skill-card" style="--i:3">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap react-icon">
+                <img src="./images/react-logo.png" alt="React" onerror="this.outerHTML='<i class=\'fa-brands fa-react\'></i>'">
+              </div>
+              <span>React</span>
+            </div>
+            <div class="skill-back">
+              <p>Component-based UIs, hooks, state management</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" style="--i:4">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap python-icon">
+                <i class="fa-brands fa-python"></i>
+              </div>
+              <span>Python</span>
+            </div>
+            <div class="skill-back">
+              <p>Scripting, automation, CLI tools, backend logic</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" style="--i:5">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap django-icon">
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <span>Django</span>
+            </div>
+            <div class="skill-back">
+              <p>Full-stack web apps, REST APIs, ORM & authentication</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" style="--i:6">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap mysql-icon">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-back">
+              <p>Relational databases, queries, schema design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card" style="--i:7">
+          <div class="skill-card-inner">
+            <div class="skill-front">
+              <div class="skill-icon-wrap git-icon">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <span>Git</span>
+            </div>
+            <div class="skill-back">
+              <p>Version control, branching, collaborative workflows</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="section-header">
+        <span class="section-label">What I've Built</span>
+        <h2>My <span class="accent">Projects</span></h2>
+        <p>Real-world applications and tools I've developed</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card" style="--i:0">
+          <div class="project-number">01</div>
+          <div class="project-icon"><i class="fa-solid fa-qrcode"></i></div>
+          <h3>QR Code Generator</h3>
+          <p>Generate QR codes in Python using the qrcode library. Encodes URLs, text, or any other data into scannable QR images.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>qrcode</span>
+            <span>CLI</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://github.com/monoartarek/QR_Code_Generator.git" class="proj-btn" target="_blank">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="#" class="proj-btn proj-btn-outline">
+              <i class="fa-solid fa-link"></i> Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" style="--i:1">
+          <div class="project-number">02</div>
+          <div class="project-icon"><i class="fa-solid fa-coins"></i></div>
+          <h3>Currency Converter</h3>
+          <p>A CLI app built in Python that converts currencies in real-time by fetching live exchange rates from online APIs.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>API</span>
+            <span>Real-time</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://github.com/monoartarek/Currency_Converter.git" class="proj-btn" target="_blank">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="#" class="proj-btn proj-btn-outline">
+              <i class="fa-solid fa-link"></i> Demo
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" style="--i:2">
+          <div class="project-number">03</div>
+          <div class="project-icon"><i class="fa-solid fa-address-card"></i></div>
+          <h3>Contact Book System</h3>
+          <p>A full-featured CLI Contact Book Management System built with Python — supports add, search, update and delete operations.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>CLI</span>
+            <span>CRUD</span>
+          </div>
+          <div class="project-btns">
+            <a href="https://github.com/monoartarek/Course_project.git" class="proj-btn" target="_blank">
+              <i class="fa-brands fa-github"></i> Code
+            </a>
+            <a href="#" class="proj-btn proj-btn-outline">
+              <i class="fa-solid fa-link"></i> Demo
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2>Contact <span class="accent">Me</span></h2>
+        <p>Open to collaborations, internships & freelance opportunities</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h4>Let's Collaborate</h4>
+            <p>I'm always open to collaboration, internship opportunities, or freelance work. Whether you need help building a project or exploring innovative ideas — I'd love to hear from you.</p>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h4>What I Offer</h4>
+            <ul>
+              <li><i class="fa-solid fa-check"></i> Software & web development</li>
+              <li><i class="fa-solid fa-check"></i> Technical conversations</li>
+              <li><i class="fa-solid fa-check"></i> Internship & research collab</li>
+              <li><i class="fa-solid fa-check"></i> Feedback on your project</li>
+            </ul>
+          </div>
+          <div class="social-row">
+            <a href="https://github.com/monoartarek" target="_blank" class="s-icon"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/md-tarek-monoar-6263b2329/" target="_blank" class="s-icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/tarekmonoar.tarek.35/" target="_blank" class="s-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/moonooar/" target="_blank" class="s-icon"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="6" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="send-btn">
+              <span>Send Message</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">
+        <div class="logo-cube small"><span>TM</span></div>
+        <span>Tarek Monoar</span>
+      </div>
+      <p>Built with monoar &amp; code · © 2025 All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
